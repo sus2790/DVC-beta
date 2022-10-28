@@ -5,6 +5,5 @@ class aa:
     def __init__(
       self,) -> None:
       ...
-    async def send(
-      self, content: str):
+    async def send(self, content: str):
       return
