@@ -1,1 +1,10 @@
-return "a" if 1 == 1 else "0"
+import aiohttp
+from typing import Optional, Union, List
+  
+class aa: 
+    def __init__(
+      self,
+    ) -> None:
+    
+    async def send(self, content: str):
+      return
