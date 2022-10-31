@@ -1,9 +1,12 @@
 import aiohttp
 from typing import Optional, Union, List
-  
-class aa: 
+
+
+class aa:
     def __init__(
-      self,) -> None:
-      ...
+        self,
+    ) -> None:
+        ...
+
     async def send(self, content: str):
-      return
+        return
