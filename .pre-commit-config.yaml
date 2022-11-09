@@ -1,10 +1,11 @@
 repos:
-  - repo: https://github.com/psf/black
-    rev: 22.10.0
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
     hooks:
-      - id: black
-        args: [--safe, --quiet]
-  - repo: https://github.com/Pierre-Sassoulas/black-disable-checker
-    rev: v1.1.1
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: https://github.com/psf/black
+    rev: 21.12b0
     hooks:
-      - id: black-disable-checker
+    -   id: black
