@@ -31,14 +31,3 @@ repos:
     hooks:
       - id: prettier
         args: [--prose-wrap=always, --print-width=88]
-  - repo: https://github.com/DanielNoord/pydocstringformatter
-    rev: 93b15ca
-    hooks:
-      - id: pydocstringformatter
-        args:
-          [
-            --style=numpydoc,
-            --no-numpydoc-name-type-spacing,
-            --no-final-period,
-            --no-capitalize-first-letter,
-          ]
