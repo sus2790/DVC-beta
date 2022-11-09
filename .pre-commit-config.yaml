@@ -24,14 +24,16 @@ repos:
     - id: check-merge-conflict
       name: Merge Conflicts
   - repo: https://github.com/psf/black
-    rev: 22.3.0
+    rev: 22.10.0
     hooks:
     - id: black
       name: Black Formatting
       language: python
       types: [file, python]
-      args: [--line-length=100]
-
-ci:
-  autofix_prs: true
-  autofix_commit_msg: "ci: correct from checks."
+      args: [--safe, --quiet, --line-length=100]
+  - repo: https://github.com/Pierre-Sassoulas/black-disable-checker
+    rev: v1.1.1
+    hooks:
+      - id: black-disable-checker
+      name: Black checker
+      language: python
