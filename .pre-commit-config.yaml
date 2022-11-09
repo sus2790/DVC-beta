@@ -5,6 +5,6 @@ repos:
       - id: black
         args: [--safe, --quiet]
   - repo: https://github.com/Pierre-Sassoulas/black-disable-checker
-    rev: 1.0.1
+    rev: v1.1.1
     hooks:
       - id: black-disable-checker
