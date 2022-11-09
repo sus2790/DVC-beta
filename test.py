@@ -4,4 +4,4 @@ class aa:
  def __init__(self,
  ) -> None:
         ...
-  async def send(self, content: str):return
+  async def send(self, content: str): return
